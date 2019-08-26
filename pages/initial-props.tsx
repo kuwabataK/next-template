@@ -1,7 +1,7 @@
 import { NextPage } from 'next'
 import Link from 'next/link'
-import Layout from '../components/Layout'
-import List from '../components/List'
+import Layout from '../components/template/Layout'
+import List from '../components/molecules/List'
 import { User } from '../interfaces'
 import { findAll } from '../utils/sample-api'
 
