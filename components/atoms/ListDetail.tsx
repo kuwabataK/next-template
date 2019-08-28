@@ -7,7 +7,7 @@ type ListDetailProps = {
 }
 
 const ListDetail: React.FunctionComponent<ListDetailProps> = ({
-  item: user,
+  item: user
 }) => (
   <div>
     <h1>Detail for {user.name}</h1>
