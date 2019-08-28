@@ -1,9 +1,9 @@
 import * as React from 'react'
 import { NextPageContext } from 'next'
-import Layout from '../components/template/Layout'
-import { User } from '../interfaces'
-import { findData } from '../utils/sample-api'
-import ListDetail from '../components/atoms/ListDetail'
+import Layout from '../src/components/template/Layout'
+import { User } from '../src/interfaces'
+import { findData } from '../src/utils/sample-api'
+import ListDetail from '../src/components/atoms/ListDetail'
 
 type Props = {
   item?: User
@@ -11,6 +11,7 @@ type Props = {
 }
 
 class InitialPropsDetail extends React.Component<Props> {
+  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
   static getInitialProps = async ({ query }: NextPageContext) => {
     try {
       const { id } = query
@@ -21,6 +22,7 @@ class InitialPropsDetail extends React.Component<Props> {
     }
   }
 
+  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
   render() {
     const { item, errors } = this.props
 

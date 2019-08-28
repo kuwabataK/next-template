@@ -1,15 +1,15 @@
 import * as React from 'react'
 import Link from 'next/link'
-import Layout from '../components/template/Layout'
-import store from '../store/store'
+import Layout from '../src/components/template/Layout'
+import store from '../src/store/store'
 import { observer } from 'mobx-react'
 
 const CounterPage: React.FunctionComponent = observer(() => {
-  const increment = () => {
+  const increment: () => void = () => {
     store.counterStore.increment()
   }
 
-  const decrement = () => {
+  const decrement: () => void = () => {
     store.counterStore.decrement()
   }
 

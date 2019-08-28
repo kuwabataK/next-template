@@ -1,9 +1,11 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable react/react-in-jsx-scope */
 import { NextPage } from 'next'
 import Link from 'next/link'
-import Layout from '../components/template/Layout'
-import List from '../components/molecules/List'
-import { User } from '../interfaces'
-import { findAll } from '../utils/sample-api'
+import Layout from '../src/components/template/Layout'
+import List from '../src/components/molecules/List'
+import { User } from '../src/interfaces'
+import { findAll } from '../src/utils/sample-api'
 
 type Props = {
   items: User[]

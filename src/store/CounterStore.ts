@@ -4,12 +4,12 @@ export class CounterStore {
   @observable counter = 0
 
   @action
-  increment() {
+  increment(): void {
     this.counter++
   }
 
   @action
-  decrement() {
+  decrement(): void {
     this.counter--
   }
 }

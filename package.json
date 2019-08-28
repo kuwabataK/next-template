@@ -5,7 +5,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "lint": "eslint src/** pages/** --ext .ts,.tsx",
+    "lint:fix": "npx lint --fix"
   },
   "dependencies": {
     "mobx": "^5.13.0",
@@ -20,7 +22,13 @@
     "@types/node": "^11.13.9",
     "@types/react": "^16.8.15",
     "@types/react-dom": "^16.0.11",
-    "prettier": "1.18.2",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "prettier": "^1.18.2",
     "typescript": "3.5.2"
   },
   "license": "ISC"
