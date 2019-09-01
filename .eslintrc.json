@@ -12,7 +12,7 @@
   ],
   "rules": {
     /**
-     * @description rules of eslint-plugin-prettier
+     * @description　eslint-plugin-prettierのルールを設定する
      */
     "prettier/prettier": [
       "error",
