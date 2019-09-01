@@ -4,10 +4,11 @@ import Layout from '../src/components/template/Layout'
 import store from '../src/store/store'
 import { observer } from 'mobx-react'
 import { usePrevious } from '../src/utils/react-hooks'
-import { cloneDeep } from 'lodash'
 
 const CounterPage: React.FunctionComponent = observer(() => {
-  const preCnt = usePrevious(cloneDeep(store.counterStore.objectCounter))
+  const preCnt = usePrevious(store.counterStore.objectCounter, {
+    deepCopy: true
+  })
   // const preCnt = usePrevious(store.counterStore.objectCounter)
   console.log(preCnt && preCnt.counter)
   console.log(preCnt && preCnt.deepcnt.counter)
