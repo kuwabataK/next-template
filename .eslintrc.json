@@ -11,9 +11,6 @@
     "plugin:react/recommended"
   ],
   "rules": {
-    /**
-     * @description　eslint-plugin-prettierのルールを設定する
-     */
     "prettier/prettier": [
       "error",
       {
