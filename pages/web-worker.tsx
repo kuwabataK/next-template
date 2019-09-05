@@ -26,7 +26,7 @@ const WebWorker: React.FC = () => {
    * workerの処理を実行する
    */
   const exec = () => {
-    worker.addEventListener('message', onWorkerMessage) // workerから帰ってくる処理結果をひろうリスナーを登録
+    worker.onmessage = onWorkerMessage // workerから帰ってくる処理結果をひろうリスナーを登録
     worker.postMessage(33) // イベント経由でworkerに処理を依頼
   }
 
