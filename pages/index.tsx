@@ -17,6 +17,11 @@ const IndexPage: NextPage = () => {
           <a>カウンター</a>
         </Link>
       </p>
+      <p>
+        <Link href="/web-worker">
+          <a>WebWorkerテスト</a>
+        </Link>
+      </p>
     </Layout>
   )
 }

@@ -24,8 +24,7 @@
     "target": "esnext"
   },
   "exclude": [
-    "node_modules",
-    // "**/*.worker.js"
+    "node_modules"
   ],
   "include": [
     "**/*.ts",
