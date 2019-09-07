@@ -4,10 +4,11 @@ import { square } from '../utils/calc' // importも使えるよ
 // src/webworker/example.worker.ts
 const ctx: Worker = self as any
 
-ctx.addEventListener('message', async event => {
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+ctx.onmessage = event => {
   console.log('worker側だよ！！ 受け取った値は', event.data)
   const res = square(event.data)
   ctx.postMessage(res)
-})
+}
 
 export default ctx
